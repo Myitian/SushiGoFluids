@@ -33,23 +33,23 @@ public class SushiGoFluids {
             () -> new VirtualFluid(FluidType.Properties.create()
                     .descriptionId("item.sushigocrafting.soy_sauce")
                     .temperature(20),
-                    new ResourceLocation("sushigofluids:block/fluid"),
+                    new ResourceLocation(MOD_ID, "block/fluid"),
                     0xEE2D1D17));
     public static final RegistryObject<VirtualFluid> WASABI_PASTE = FLUIDS.register("wasabi_paste",
             () -> new VirtualFluid(FluidType.Properties.create()
                     .descriptionId("item.sushigocrafting.wasabi_paste")
                     .temperature(20),
-                    new ResourceLocation("sushigofluids:block/fluid"),
+                    new ResourceLocation(MOD_ID, "block/fluid"),
                     0xFF92A348));
 
     public SushiGoFluids() {
-        IEventBus MOD_BUS = FMLJavaModLoadingContext.get().getModEventBus();
-        FLUIDS.register(MOD_BUS);
-        MOD_BUS.addListener(this::onFMLCommonSetupEvent);
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        FLUIDS.register(bus);
+        bus.addListener(this::onFMLCommonSetup);
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    public void onFMLCommonSetupEvent(FMLCommonSetupEvent event) {
+    public void onFMLCommonSetup(FMLCommonSetupEvent event) {
         FLUID_HASH_MAP.put(SushiContent.Items.SOY_SAUCE.get(), SOY_SAUCE.get());
         FLUID_HASH_MAP.put(SushiContent.Items.WASABI_PASTE.get(), WASABI_PASTE.get());
     }

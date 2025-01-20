@@ -17,8 +17,6 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraftforge.fluids.FluidType;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.function.Supplier;
-
 public class VirtualFluid extends FlowingFluid {
     protected FluidType fluidType;
 
