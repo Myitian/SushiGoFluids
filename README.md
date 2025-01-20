@@ -5,7 +5,7 @@ MIT
 ## Dependencies
 - Minecraft 1.20.1
 - Forge Mod Loader
-- Sushi Go Crafting
+- [Sushi Go Crafting](https://github.com/Buuz135/SushiGoCrafting)
 ## Recipe Compatibility
 ### Create
 - Filling by Spout\
