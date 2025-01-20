@@ -7,7 +7,7 @@ modId = "sushigofluids"
 version = "${version}"
 displayName = "Sushi Go Fluids"
 displayURL="https://github.com/Myitian/SushiGoFluids"
-# logoFile="icon.png"
+logoFile="icon.png"
 authors="Myitian"
 description = '''
 Adds fluid support to some items in Sushi Go Crafting.

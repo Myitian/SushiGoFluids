@@ -1,4 +1,4 @@
-# SushiGoFluids
+# Sushi Go Fluids
 Added fluid support to some items in Sushi Go Crafting.
 ## License
 MIT
