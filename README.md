@@ -8,19 +8,19 @@ MIT
 - Sushi Go Crafting
 ## Recipe Compatibility
 ### Create
-- Filling by Spout
+- Filling by Spout\
   ![Recipe: filling in Create](./res/compact_Create-filling.png)
-- Item Draining
+- Item Draining\
   ![Recipe: emptying in Create](./res/compact_Create-emptying.png)
-- Mixing
+- Mixing\
   ![Recipe: mixing in Create](./res/compact_Create-mixing.png)
 ### Thermal Expansion
-- Centrifugal Separator
+- Centrifugal Separator\
   ![Recipe: centrifuging in Thermal Expansion](./res/compact_ThermalExpansion-centrifuge.png)
-- Fluid Encapsulator
+- Fluid Encapsulator\
   ![Recipe: bottling in Thermal Expansion](./res/compact_ThermalExpansion-bottler.png)
 ### Immersive Engineering
-- Industrial Squeezer
+- Industrial Squeezer\
   ![Recipe: squeezing in Immersive Engineering](./res/compact_ImmersiveEngineering-squeezer.png)
-- Bottling Machine
+- Bottling Machine\
   ![Recipe: bottling in Immersive Engineering](./res/compact_ImmersiveEngineering-bottling.png)
