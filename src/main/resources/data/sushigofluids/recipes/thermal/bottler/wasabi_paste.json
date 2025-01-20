@@ -1,0 +1,26 @@
+{
+  "type": "thermal:bottler",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "amount": 100,
+      "fluid": "sushigofluids:wasabi_paste"
+    }
+  ],
+  "results": [
+    {
+      "item": "sushigocrafting:wasabi_paste",
+      "nbt": {
+        "Amount": 100
+      }
+    }
+  ]
+}

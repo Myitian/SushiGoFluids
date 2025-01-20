@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+
+[[mods]]
+modId = "sushigofluids"
+version = "${version}"
+displayName = "Sushi Go Fluids"
+displayURL="https://github.com/Myitian/SushiGoFluids"
+# logoFile="icon.png"
+authors="Myitian"
+description = '''
+Adds fluid support to some items in Sushi Go Crafting.
+'''
+
+[[dependencies.sushigofluids]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.sushigofluids]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.sushigofluids]]
+modId = "sushigocrafting"
+mandatory = true
+versionRange = "[0.4,)"
+ordering = "NONE"
+side = "BOTH"

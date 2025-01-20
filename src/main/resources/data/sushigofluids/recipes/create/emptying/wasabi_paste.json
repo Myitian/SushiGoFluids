@@ -1,0 +1,23 @@
+{
+  "type": "create:emptying",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "sushigocrafting:wasabi_paste",
+      "nbt": {
+        "Amount": 100
+      }
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "sushigofluids:wasabi_paste"
+    }
+  ]
+}

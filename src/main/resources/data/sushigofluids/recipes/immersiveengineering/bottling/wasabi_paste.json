@@ -1,0 +1,24 @@
+{
+  "type": "immersiveengineering:bottling_machine",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "fluid": {
+    "amount": 100,
+    "tag": "forge:wasabi_paste"
+  },
+  "input": {
+    "item": "minecraft:bowl"
+  },
+  "results": [
+    {
+      "item": "sushigocrafting:wasabi_paste",
+      "nbt": {
+        "Amount": 100
+      }
+    }
+  ]
+}

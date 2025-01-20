@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:squeezer",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "input": {
+    "tag": "forge:crops/wasabi_root"
+  },
+  "fluid": {
+    "amount": 40,
+    "fluid": "sushigofluids:wasabi_paste"
+  },
+  "energy": 1600
+}

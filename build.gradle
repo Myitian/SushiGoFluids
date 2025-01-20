@@ -1,0 +1,88 @@
+plugins {
+    id "dev.architectury.loom" version "1.7-SNAPSHOT"
+    id "maven-publish"
+}
+
+base {
+    archivesName = project.archives_base_name
+}
+
+version = project.mod_version
+group = project.maven_group
+
+java {
+    sourceCompatibility = targetCompatibility = JavaVersion.VERSION_17
+}
+
+loom {
+    silentMojangMappingsLicense()
+}
+
+repositories {
+    maven { url "https://cursemaven.com" }
+    maven { url "https://api.modrinth.com/maven" }
+    maven { url "https://maven.tterrag.com" }
+    maven { url "https://maven.architectury.dev" }
+    maven { url "https://modmaven.dev" }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.officialMojangMappings()
+
+    forge "net.minecraftforge:forge:${project.forge_version}"
+
+    // test jei/rei
+    modRuntimeOnly "curse.maven:architectury-api-419699:5137938"
+    modRuntimeOnly "curse.maven:cloth-config-348521:5729105"
+    modRuntimeOnly "curse.maven:roughly-enough-items-310111:5846923"
+    modRuntimeOnly "curse.maven:roughly-enough-items-hacks-521393:4837449"
+
+    // for test fluids in tanks/pipes
+    modRuntimeOnly "curse.maven:mekanism-268560:6018299"
+
+    modImplementation "curse.maven:titanium-287342:5468426"
+    modImplementation "curse.maven:sushigocrafting-452500:5638169"
+}
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("META-INF/mods.toml") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+    options.release = 17
+}
+
+java {
+    withSourcesJar()
+}
+
+jar {
+    manifest {
+        attributes([
+                "Specification-Title"     : project.mod_id,
+                "Specification-Vendor"    : project.mod_author,
+                "Specification-Version"   : "1",
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : version,
+                "Implementation-Vendor"   : project.mod_author,
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+
+    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+    repositories {
+    }
+}

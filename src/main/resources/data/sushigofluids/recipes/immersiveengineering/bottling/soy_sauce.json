@@ -1,0 +1,24 @@
+{
+  "type": "immersiveengineering:bottling_machine",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "fluid": {
+    "amount": 100,
+    "tag": "forge:soy_sauce"
+  },
+  "input": {
+    "item": "minecraft:glass_bottle"
+  },
+  "results": [
+    {
+      "item": "sushigocrafting:soy_sauce",
+      "nbt": {
+        "Amount": 100
+      }
+    }
+  ]
+}

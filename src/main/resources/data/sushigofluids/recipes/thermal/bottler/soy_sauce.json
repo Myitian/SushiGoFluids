@@ -1,0 +1,26 @@
+{
+  "type": "thermal:bottler",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "amount": 100,
+      "fluid": "sushigofluids:soy_sauce"
+    }
+  ],
+  "results": [
+    {
+      "item": "sushigocrafting:soy_sauce",
+      "nbt": {
+        "Amount": 100
+      }
+    }
+  ]
+}

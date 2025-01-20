@@ -1,0 +1,19 @@
+{
+  "type": "thermal:centrifuge",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal_expansion"
+    }
+  ],
+  "ingredients": {
+    "tag": "forge:crops/wasabi_root"
+  },
+  "results": [
+    {
+      "amount": 40,
+      "fluid": "sushigofluids:wasabi_paste"
+    }
+  ],
+  "energy": 1600
+}

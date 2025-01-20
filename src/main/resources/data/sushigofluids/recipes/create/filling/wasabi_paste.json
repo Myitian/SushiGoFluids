@@ -1,0 +1,26 @@
+{
+  "type": "create:filling",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "amount": 100,
+      "fluid": "sushigofluids:wasabi_paste"
+    }
+  ],
+  "results": [
+    {
+      "item": "sushigocrafting:wasabi_paste",
+      "nbt": {
+        "Amount": 100
+      }
+    }
+  ]
+}
